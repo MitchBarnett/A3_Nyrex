@@ -7,21 +7,22 @@ class CfgVehicles
 		{
 			class NYREX_Nyrex 
 			{
-				condition = (call NYREX_fnc_haveNotepad || call NYREX_fnc_haveSlateCards || NYREX_fnc_haveOrdersBook || NYREX_fnc_haveTAM);
+				condition = (call NYREX_fnc_canUseNotepad || call NYREX_fnc_canUseSlateCards ||call NYREX_fnc_canUseOrdersBook ||call NYREX_fnc_canUseTAM);
 				displayName = "Nyrex";
 				exceptions[] = { "isNotSwiming", "isNotDragging"};
 				class NYREX_Notepad 
 				{
 					displayName = "Notepad";
 					//TODO: icon = "";
-					condition = true; //TODO
-					statement = hintSilent "Opening Notepad"; //TODO
+					condition = call NYREX_fnc_canUseNotepad;
+					statement = call NYREX_fnc_openNotepad;
 				};
 				class NYREX_SlateCards 
 				{
 					displayName = "Slate Cards";
 					//TODO: icon = "";
-					condition = true; //TODO
+					condition = call NYREX_fnc_canUseSlateCards;
+					statement = call NYREX_fnc_openSlateCards;
 					class NYREX_ECAS
 					{
 						displayName = "Emergency close air support";
@@ -48,15 +49,15 @@ class CfgVehicles
 				{
 					displayName = "Orders Book";
 					//TODO: icon = "";
-					condition = true; //TODO
-					statement = hintSilent "Opening Orders Book"; //TODO
+					condition = call NYREX_fnc_canUseOrdersBook; 
+					statement = call NYREX_fnc_openOrdersBook; //TODO
 				};
 				class NYREX_TAM 
 				{
 					displayName = "TAM";
 					//TODO: icon = "";
-					condition = true; //TODO
-					statement = hintSilent "Opening TAM"; //TODO
+					condition = call NYREX_fnc_canUseTam;
+					statement = call NYREX_fnc_openTAM; //TODO
 				};
 			};
 		};

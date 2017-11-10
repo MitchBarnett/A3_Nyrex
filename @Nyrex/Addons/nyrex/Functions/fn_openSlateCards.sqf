@@ -1,0 +1,1 @@
+hintSilent "Slate Cards Opened"

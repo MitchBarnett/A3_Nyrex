@@ -1,0 +1,1 @@
+hintSilent "Notepad Opened"
