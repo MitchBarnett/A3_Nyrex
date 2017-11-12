@@ -1,1 +1,1 @@
-hintSilent "Notepad Opened"
+createDialog "NYREX_NotepadDialog";

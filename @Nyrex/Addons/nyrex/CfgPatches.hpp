@@ -1,3 +1,10 @@
+/*
+Author: Frogman
+
+Description:  Contains meta  information on the addon. To be included into config.cpp
+
+*/
+
 class CfgPatches
 {
 	class Nyrex
@@ -6,7 +13,7 @@ class CfgPatches
 		author = "Frogman";
 		url = "";//TODO
 		requiredVersion = 1.76;
-		requiredAddons[] = { };
+		requiredAddons[] = {};
 		units[] = {};
 		weapons[] = {};
 	};

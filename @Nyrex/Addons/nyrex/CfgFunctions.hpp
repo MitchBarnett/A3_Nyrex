@@ -1,3 +1,10 @@
+/*
+Author: Frogman
+
+Description:  Registers functions into the functions libary
+
+*/
+
 class CfgFunctions
 {
 	class NYREX

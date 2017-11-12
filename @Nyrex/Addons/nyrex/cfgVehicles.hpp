@@ -1,3 +1,11 @@
+/*
+Author: Frogman
+
+Description:  CfgVehicles class to be included into config.cpp
+
+Used for: vehicles, modules, men and buildings.
+*/
+
 class CfgVehicles 
 {
 	class Man;
