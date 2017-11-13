@@ -21,7 +21,7 @@ class CfgVehicles
 				class NYREX_Notepad 
 				{
 					displayName = "Notepad";
-					//TODO: icon = "";
+					icon = "\nyrex\Data\notepad.paa";
 					condition = call NYREX_fnc_canUseNotepad;
 					statement = call NYREX_fnc_openNotepad;
 				};
